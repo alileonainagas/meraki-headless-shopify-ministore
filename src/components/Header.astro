@@ -1,0 +1,23 @@
+---
+import Logo from "./Logo.astro";
+import CartIcon from "./CartIcon.svelte";
+---
+
+<header class="sticky top-0 z-40 bg-navy-blue">
+  <div class="navy-blue py-3 backdrop-blur-2xl">
+    <nav class="container grid grid-cols-2 sm:grid-cols-3 items-center">
+      <a href="/">
+        <span class="sr-only">Logo</span>
+        <Logo />
+      </a>
+      <h1
+        class="sm:flex justify-center text-sm hidden font-semibold sm:text-xl nothing-you-could-do-regular"
+      >
+      Fly High, Wear First Class
+      </h1>
+      <div class="justify-self-end">
+        <CartIcon client:load />
+      </div>
+    </nav>
+  </div>
+</header>

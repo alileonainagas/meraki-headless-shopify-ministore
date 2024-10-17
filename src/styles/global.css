@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply flex min-h-screen flex-col bg-[#e8e7f4] scroll-smooth;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  details>summary {
+    list-style: none;
+  }
+
+  details>summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .navy-blue {
+    @apply bg-[#000042] text-white;
+  }
+
+  .navy-blue-text {
+    @apply text-[#000042];
+  }
+
+  .almost-black {
+    @apply bg-[#010101] text-white;
+  }
+
+  .almost-black-text {
+    @apply text-[#010101];
+  }
+
+  .product-radial-background {
+    background: #E8E7F4;
+    background: radial-gradient(at center, #454451, #000002, #00000a);
+  }
+
+  .product-card {
+    min-height: 585px;
+  }
+
+  .product-view-bg {
+    @apply  bg-[#b7b7c9];
+  }
+
+  .nothing-you-could-do-regular {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nobile-regular {
+    font-family: "Nobile", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nobile-medium {
+    font-family: "Nobile", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .nobile-bold {
+    font-family: "Nobile", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .nobile-medium-italic {
+    font-family: "Nobile", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .button {
+    @apply flex items-center justify-center rounded-lg;
+    @apply bg-gradient-to-br from-[#000035] via-[#000053] to-[#1c1c84];
+    @apply py-3 px-8 font-medium text-white anton-regular text-xl tracking-wider;
+    @apply transition hover:opacity-80;
+    @apply focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-1;
+    @apply disabled:cursor-not-allowed disabled:opacity-60;
+  }
+}
